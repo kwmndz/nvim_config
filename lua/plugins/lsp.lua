@@ -33,8 +33,38 @@ return {
       },
     }
 
+    -- TOML LSP (taplo)
+    vim.lsp.config.taplo = {
+      cmd = { "taplo", "lsp", "stdio" },
+      filetypes = { "toml" },
+      capabilities = capabilities,
+      settings = {
+        taplo = {
+          schema = {
+            enabled = true,
+            catalogs = {
+              "https://www.schemastore.org/api/json/catalog.json",
+            },
+          },
+        },
+      },
+    }
+
+    -- C/C++ LSP (clangd)
+    vim.lsp.config.clangd = {
+        cmd = {
+            "clangd",
+            "--background-index",
+            "--clang-tidy",
+            "--completion-style=detailed",
+            "--header-insertion=iwyu",
+        },
+        filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
+        capabilities = capabilities,
+    }
+
     -- enable servers
-    vim.lsp.enable({ "pyright", "rust_analyzer" })
+    vim.lsp.enable({ "pyright", "rust_analyzer", "taplo", "clangd"})
   end,
 }
 

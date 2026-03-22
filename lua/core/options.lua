@@ -3,6 +3,7 @@ local o = vim.opt
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+
 o.number = true
 o.relativenumber = true
 o.expandtab = true
@@ -24,3 +25,5 @@ o.foldcolumn = "1"
 o.foldlevelstart = 99
 vim.cmd("syntax enable")
 vim.cmd("filetype plugin indent on")
+
+vim.cmd.colorscheme("wallbash")

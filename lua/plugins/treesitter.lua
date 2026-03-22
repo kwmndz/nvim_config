@@ -4,7 +4,7 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   config = function()
     require("nvim-treesitter.configs").setup({
-      ensure_installed = { "python", "lua", "html", "json", "yaml", "rust" },
+      ensure_installed = { "python", "lua", "html", "json", "yaml", "rust", "toml", "c" },
       highlight = { enable = true },
       indent = { enable = true },
     })
