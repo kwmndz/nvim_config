@@ -16,10 +16,10 @@ return {
       local cmp = require("cmp")
       local luasnip = require("luasnip")
 
-      -- Only keep this if you actually install a vscode snippet collection later
       pcall(function()
         require("luasnip.loaders.from_vscode").lazy_load()
       end)
+      pcall(function() require("snippets.c") end)
 
       cmp.setup({
         performance = {

@@ -27,3 +27,13 @@ vim.cmd("syntax enable")
 vim.cmd("filetype plugin indent on")
 
 vim.cmd.colorscheme("wallbash")
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "c", "cpp" },
+  callback = function()
+    vim.opt_local.cindent = true
+    vim.opt_local.autoindent = true
+    vim.opt_local.smartindent = false
+    vim.opt_local.cinoptions = "l1,(0,W4,m1,j1"
+  end,
+})
