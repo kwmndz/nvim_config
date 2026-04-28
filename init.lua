@@ -1,4 +1,3 @@
-vim.g.mapleader = " "
-require("core.options")
-require("core.keymaps")
-require("core.lazy")
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+require("grimmvim.config")
