@@ -45,6 +45,7 @@ return {
 				{ "tailwindcss-language-server" },
 				{ "clangd" },
 				{ "clang-format" },
+				{ "rust-analyzer" },
 			},
 			auto_update = true,
 			run_on_start = true,

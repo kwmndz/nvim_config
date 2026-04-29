@@ -92,6 +92,7 @@ return {
 			},
 			clangd = {},
 			pyright = {},
+			rust_analyzer = {},
 			html = {},
 			tailwindcss = {
 				filetypes = {

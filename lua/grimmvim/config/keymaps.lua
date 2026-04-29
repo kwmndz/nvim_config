@@ -44,10 +44,10 @@ map("n", "<C-k>", "<C-w>k", { desc = "Focus Up", noremap = true, silent = false 
 map("n", "<C-l>", "<C-w>l", { desc = "Focus Down", noremap = true, silent = false })
 
 -- Resize windows or panes
-map("n", "<C-S-H>", "3<C-w>>", { desc = "Resize Left", noremap = true, silent = false })
-map("n", "<C-S-J>", "3<C-w>-", { desc = "Resize Right", noremap = true, silent = false })
-map("n", "<C-S-K>", "3<C-w>+", { desc = "Resize Up", noremap = true, silent = false })
-map("n", "<C-S-L>", "3<C-w><", { desc = "Resize Down", noremap = true, silent = false })
+map("n", "<A-h>", "3<C-w>>", { desc = "Resize Left", noremap = true, silent = false })
+map("n", "<A-j>", "3<C-w>-", { desc = "Resize Down", noremap = true, silent = false })
+map("n", "<A-k>", "3<C-w>+", { desc = "Resize Up", noremap = true, silent = false })
+map("n", "<A-l>", "3<C-w><", { desc = "Resize Right", noremap = true, silent = false })
 
 -- Editing Keymaps
 map("n", "<leader>q", ":q<cr>", { desc = "Quit File", noremap = true, silent = true })
